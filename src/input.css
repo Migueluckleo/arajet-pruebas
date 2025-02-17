@@ -1,1 +1,5 @@
 @import "tailwindcss";
+@theme {
+    --color-bg-hero: #510C76;
+    --color-button-primary-extraLight: #D8EBBD;
+}
