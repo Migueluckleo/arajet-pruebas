@@ -2,4 +2,15 @@
 @theme {
     --color-bg-hero: #510C76;
     --color-button-primary-extraLight: #D8EBBD;
+    --color-surface-brand-primary-light: #F7F9F9;
+    --color-font-primary: #37332E;
+    --color-font-secondary: #625A52;
+}
+
+h3{
+    @apply text-[16px] md:text-xl lg:text-[20px] font-semibold text-font-primary;
+
+}
+p{
+    @apply text-[14px] md:text-base lg:text-base font-normal text-font-secondary;
 }

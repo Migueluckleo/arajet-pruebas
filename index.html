@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="src/output.css" rel="stylesheet">
 </head>
-<body>
+<body class="flex flex-col w-full bg-[#F6F3F8] p-4  " >
+  <!--
  <div class="w-full h-auto flex sm:flex-col-reverse flex-col justify-center bg-bg-hero  text-white py-10">
         <img class="relative max-w-[1440px] px-6 top-0 left-1/2 transform -translate-x-1/2" src="src/assets/cover.png" alt=" promo cover image">
         <div class="relative max-w-[1440px] flex flex-col lg:flex-row justify-center p-6 top-0 left-1/2 transform -translate-x-1/2">
@@ -20,7 +21,117 @@
             </div>
 
  </div>
+</div>-->
+
+<div class="relative flex flex-col py-4 md:p-4 rounded-2xl px-3 md:px-6 bg-white gap-4 max-w-[1280px] left-[50%] transform -translate-x-1/2">
+ <!-- depart-->
+ 
+
+  <div id="content" class="flex flex-col gap-4">
+    <div id="header" class="flex flex-row justify-between items-center">
+      <h3>Depart</h3>
+      <button id="checkin-departure-availability" class="p-3 bg-button-primary-extraLight rounded-full text-[12px] font-semibold uppercase text-[#558412]">
+        Checkin Available
+      </button>
+    </div>
+    <div id="departing" class="flex flex-col md:flex-row gap-4">
+      <div id="dates" class="flex flex-row justify-between items-center md:w-2/3">
+        <div id="departure-date" class="flex flex-col w-1/2 md:w-full">
+          <p id="date-time-departure">Tue, May 20 7:00 am</p>
+          <div id="destination-info" class="flex flex-row gap-2">
+            <h3 id="destination">Miami</h3>
+            <h3 id="iata-destination">(MIA)</h3>
+          </div>
+        </div>
+  
+        <div id="arrival-date" class="flex flex-col w-1/2 md:w-full">
+          <div class="flex flex-row gap-2">
+            <p id="date-time-arrival">Tue, May 20 7:00 am</p>
+            <span id="next-day-arrival" class="text-[12px] text-[#A37D00]">+1 day</span>
+          </div>
+          <div id="arrival-info" class="flex flex-row gap-2">
+            <h3 id="arrival">Buenos Aires</h3>
+            <h3 id="iata-arrival">(EZE)</h3>
+          </div>
+        </div>
+      </div>
+  
+      <div id="travel-time" class="hidden lg:flex flex-col w-1/4">
+        <p class="hidden lg:flex ">Travel Time</p>
+        <h3 id="destination">8h 30m</h3>
+      </div>
+  
+      <div class="flex flex-col md:w-2/3 md:items-end lg:items-start">
+        <p class="hidden lg:flex ">Flight(s) Number(s)</p>
+        <div id="flight-numbers" class="flex flex-wrap gap-1">
+          <span id="single" class="px-3 py-1 text-sm font-bold text-purple-800 bg-purple-200 rounded-lg">
+            DM1232
+          </span>
+          <span id="connecting" class="px-3 py-1 text-sm font-bold text-purple-800 bg-purple-200 rounded-lg">
+            DM2105
+          </span>
+          <span id="interline" class="px-3 py-1 text-sm font-bold text-gray-800 bg-gray-300 rounded-lg">
+            AV123
+          </span>
+        </div>
+      </div>
+
+    </div>
+<!-- Return-->
+<div id="header" class="flex flex-row justify-between items-center mt-6">
+  <h3>Return</h3>
+  <button id="checkin-departure-availability" class="hidden p-3 bg-button-primary-extraLight rounded-full text-[12px] font-semibold uppercase text-[#558412]">
+    Checkin Available
+  </button>
 </div>
+
+ <div id="return" class="flex flex-col md:flex-row gap-4">
+   <div id="dates" class="flex flex-row justify-between items-center md:w-2/3">
+     <div id="departure-date" class="flex flex-col w-1/2 md:w-full">
+       <p id="date-time-departure">Tue, May 20 7:00 am</p>
+       <div id="destination-info" class="flex flex-row gap-2">
+         <h3 id="destination">Miami</h3>
+         <h3 id="iata-destination">(MIA)</h3>
+       </div>
+     </div>
+
+     <div id="arrival-date" class="flex flex-col w-1/2 md:w-full">
+       <div class="flex flex-row gap-2">
+         <p id="date-time-arrival">Tue, May 20 7:00 am</p>
+         <span id="next-day-arrival" class="text-[12px] text-[#A37D00]">+1 day</span>
+       </div>
+       <div id="arrival-info" class="flex flex-row gap-2">
+         <h3 id="arrival">Buenos Aires</h3>
+         <h3 id="iata-arrival">(EZE)</h3>
+       </div>
+     </div>
+   </div>
+
+   <div id="travel-time" class="hidden lg:flex flex-col w-1/4">
+     <p class="hidden lg:flex ">Travel Time</p>
+     <h3 id="destination">8h 30m</h3>
+   </div>
+
+   <div class="flex flex-col md:w-2/3 md:items-end lg:items-start">
+     <p class="hidden lg:flex ">Flight(s) Number(s)</p>
+     <div id="flight-numbers" class="flex flex-wrap gap-1">
+       <span id="single" class="px-3 py-1 text-sm font-bold text-purple-800 bg-purple-200 rounded-lg">
+         DM2321
+       </span>
+       <span id="connecting" class="px-3 py-1 text-sm font-bold text-purple-800 bg-purple-200 rounded-lg">
+         DM5012
+       </span>
+       <span id="interline" class="px-3 py-1 text-sm font-bold text-gray-800 bg-gray-300 rounded-lg">
+         AV321
+       </span>
+     </div>
+   </div>
+ </div>
+
+ </div>
+</div>
+
+
 
 </body>
 </html>
